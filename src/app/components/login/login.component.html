@@ -1,0 +1,8 @@
+The current logged in user is <strong>{{user.username}}</strong><br>
+<h3>Books</h3>
+<ul>
+    <li *ngFor="let book of books">
+        {{ book.title }} by {{ book.author }}<br>
+        Review: {{ book.review }}
+    </li>
+</ul>
